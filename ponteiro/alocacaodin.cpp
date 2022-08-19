@@ -37,24 +37,27 @@ void preencher(int *v, int n)
 
 int pesquisa(int *v, int n, int a)
 {
-    int cont = 0;
     for (int i = 0; i < n; i++)
     {
         if (a == v[i])
         {
-            cont++;
+            return 1;
         }
-        return cont;
     }
+    return 0;
 }
 
-void encontra(int *v, int n, int a){
+void encontra(int *v, int n, int a)
+{
     a = pesquisa(v, n, a);
 
-    if(a > 0){
-        cout<< "Num encontre"<<endl;
-    } else{
-        cout<<"F"<<endl;
+    if (a > 0)
+    {
+        cout << "Num encontre" << endl;
+    }
+    else
+    {
+        cout << "F" << endl;
     }
 
     for (int i = 0; i < n; i++)
