@@ -3,11 +3,6 @@
 
 using namespace std;
 
-void criarLista(TipoLista &lista);
-int verificaListaVazia(TipoLista &lista);
-int insereLista(TipoLista &lista, TipoItem item);
-void imprimeLista(TipoLista &lista);
-
 typedef struct TipoItem
 {
     int chave;
@@ -19,6 +14,11 @@ typedef struct TipoLista
     TipoItem item[MaxTam];
     int tamanho = 0;
 };
+
+void criarLista(TipoLista &lista);
+int verificaListaVazia(TipoLista &lista);
+int insereLista(TipoLista &lista, TipoItem item);
+void imprimeLista(TipoLista &lista);
 
 int main(){
     TipoLista lista;
